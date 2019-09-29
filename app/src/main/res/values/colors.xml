@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="back_bar_color">#08000000</color>
+    <color name="kk_common_divided_line_color">#F6F6F6</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="dialog_cancel_text_color">#999999</color>
+    <color name="dialog_delete_text_color">#F35454</color>
+
+</resources>

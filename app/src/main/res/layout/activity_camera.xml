@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.CameraActivity">
+
+    <ImageView
+        android:id="@+id/iv_image_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <TextureView
+        android:id="@+id/sv_video_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/ibtn_play_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@mipmap/video_play_normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_video_progress_bar"
+        android:layout_width="480dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibtn_video_play_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@mipmap/icon_pause"
+            android:background="@null"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_video_live_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_control_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:maxHeight="7dp"
+            android:minHeight="7dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:thumb="@mipmap/progress_bar_circle"
+            android:thumbOffset="12dp" />
+
+        <TextView
+            android:id="@+id/tv_video_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

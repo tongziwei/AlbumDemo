@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Album</string>
+
+    <string name="album_all_images">All Images</string>
+    <string name="album_all_videos">All Videos</string>
+    <string name="album_all_images_videos">All Images/Videos</string>
+
+    <string name="album_title_permission_failed">Permission denied</string>
+    <string name="album_permission_storage_failed_hint">No storage permission, please authorize before use.</string>
+    <string name="album_permission_camera_image_failed_hint">No Camera permission or Storage permission, please authorize before use.</string>
+    <string name="album_permission_camera_video_failed_hint">No Camera permission, Storage permission or Microphone permission, please authorize it before use.</string>
+
+    <string name="album_ok">OK</string>
+    <string name="dialog_delete_items_title">Delete the items?</string>
+    <string name="dialog_delete_item_title">Delete the item?</string>
+    <string name="dialog_cancel">CANCEL</string>
+    <string name="dialog_delete">DELETE</string>
+</resources>

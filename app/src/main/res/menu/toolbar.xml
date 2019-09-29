@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/take_picture"
+        android:icon="@mipmap/ic_take_picture"
+        android:title="Camera"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/record"
+        android:icon="@mipmap/ic_record"
+        android:title="Record"
+        app:showAsAction="always"/>
+
+
+</menu>

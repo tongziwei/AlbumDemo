@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.GalleryVideosActivity">
+
+    <TextureView
+        android:id="@+id/sv_video_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/back_bar_color"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src ="@mipmap/album_ic_back_white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_videos_autoplay_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src = "@mipmap/icon_pause"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="267dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_shape_round_rec_white_7dp">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff333333"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ff333333"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="73dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_confirm_no_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#ff333333"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="91dp"
+        android:background="@color/kk_common_divided_line_color" />
+
+    <Button
+        android:id="@+id/btn_dialog_reset_cancel_btn"
+        android:layout_width="133dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/divider"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:background="@color/kk_common_divided_line_color" />
+
+    <Button
+        android:id="@+id/btn_dialog_reset_confirm_btn"
+        android:layout_width="133dp"
+        android:layout_height="43dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/divider"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="17dp" />
+
+</RelativeLayout>
