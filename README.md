@@ -1,7 +1,8 @@
 # AlbumDemo
 一个相册App,加载系统内的所有图片、视频，实现图片视频的预览，删除，自动轮播功能，调用系统的相机拍照、录像
+
 1、系统内所有照片、视频的读取
-  MeadiaRead 类
+   MeadiaRead 类
   通过ContentResolver类读取
      ContentResolver contentResolver = mContext.getContentResolver();
         Cursor cursor = contentResolver.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
